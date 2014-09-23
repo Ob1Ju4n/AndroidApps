@@ -2,43 +2,69 @@
 <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
              android:layout_width="match_parent"
              android:layout_height="match_parent"
-             android:shrinkColumns="1"
+             android:shrinkColumns="*"
              android:stretchColumns="*">
 
     <TableRow>
         <TextView
                 android:inputType="number"
-                android:padding="3dip"/>
+                android:padding="3dip"
+                android:minHeight="270px"/>
         <TextView
                 android:inputType="number"
-                android:padding="3dip"/>
+                android:padding="3dip"
+                android:minHeight="270px"/>
         <TextView
                 android:inputType="number"
-                android:padding="3dip"/>
+                android:padding="3dip"
+                android:minHeight="270px"/>
     </TableRow>
 
     <TableRow>
         <TextView
                 android:inputType="number"
-                android:padding="3dip"/>
+                android:padding="3dip"
+                android:minHeight="270px"/>
         <TextView
                 android:inputType="number"
-                android:padding="3dip"/>
+                android:padding="3dip"
+                android:minHeight="270px"/>
         <TextView
                 android:inputType="number"
-                android:padding="3dip"/>
+                android:padding="3dip"
+                android:minHeight="270px"/>
     </TableRow>
 
     <TableRow>
         <TextView
                 android:inputType="number"
-                android:padding="3dip"/>
+                android:padding="3dip"
+                android:minHeight="270px"/>
         <TextView
                 android:inputType="number"
-                android:padding="3dip"/>
+                android:padding="3dip"
+                android:minHeight="270px"/>
         <TextView
                 android:inputType="number"
-                android:padding="3dip"/>
+                android:padding="3dip"
+                android:minHeight="270px"/>
+    </TableRow>
+
+    <TableRow>
+        <LinearLayout android:layout_span="3">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/resultLbl"
+                    android:id="@+id/textView" android:paddingStart="10px"/>
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/textView2" android:hint="@string/defaultResult"
+                    android:paddingStart="10px"/>
+        </LinearLayout>
     </TableRow>
 
 </TableLayout>

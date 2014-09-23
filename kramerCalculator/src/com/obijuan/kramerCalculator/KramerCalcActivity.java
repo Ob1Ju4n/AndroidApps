@@ -4,23 +4,24 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import java.math.BigDecimal;
 
 public class KramerCalcActivity extends Activity {
 
-    private TextView tv11;
-    private TextView tv12;
-    private TextView tv13;
+    private EditText tv11;
+    private EditText tv12;
+    private EditText tv13;
 
-    private TextView tv21;
-    private TextView tv22;
-    private TextView tv23;
+    private EditText tv21;
+    private EditText tv22;
+    private EditText tv23;
 
-    private TextView tv31;
-    private TextView tv32;
-    private TextView tv33;
+    private EditText tv31;
+    private EditText tv32;
+    private EditText tv33;
 
 
     private TextView rTv;
@@ -36,17 +37,17 @@ public class KramerCalcActivity extends Activity {
         /**
          * Binding UI components to variables
          */
-        tv11 = (TextView) findViewById(R.id.tv11);
-        tv12 = (TextView) findViewById(R.id.tv12);
-        tv13 = (TextView) findViewById(R.id.tv13);
+        tv11 = (EditText) findViewById(R.id.tv11);
+        tv12 = (EditText) findViewById(R.id.tv12);
+        tv13 = (EditText) findViewById(R.id.tv13);
 
-        tv21 = (TextView) findViewById(R.id.tv21);
-        tv22 = (TextView) findViewById(R.id.tv22);
-        tv23 = (TextView) findViewById(R.id.tv23);
+        tv21 = (EditText) findViewById(R.id.tv21);
+        tv22 = (EditText) findViewById(R.id.tv22);
+        tv23 = (EditText) findViewById(R.id.tv23);
 
-        tv31 = (TextView) findViewById(R.id.tv31);
-        tv32 = (TextView) findViewById(R.id.tv32);
-        tv33 = (TextView)findViewById(R.id.tv33);
+        tv31 = (EditText) findViewById(R.id.tv31);
+        tv32 = (EditText) findViewById(R.id.tv32);
+        tv33 = (EditText)findViewById(R.id.tv33);
 
         rTv = (TextView) findViewById(R.id.resVal);
         final Button rBtn = (Button) findViewById(R.id.resBtn);

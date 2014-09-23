@@ -6,7 +6,7 @@
              android:stretchColumns="*">
 
     <TableRow>
-        <TextView
+        <EditText
                 android:id="@+id/tv11"
                 android:inputType="numberSigned"
                 android:gravity="center"
@@ -14,7 +14,7 @@
                 android:hint="@string/defaultResult"
                 android:minHeight="270px"
                 android:editable="true"/>
-        <TextView
+        <EditText
                 android:id="@+id/tv12"
                 android:inputType="numberSigned"
                 android:gravity="center"
@@ -22,7 +22,7 @@
                 android:hint="@string/defaultResult"
                 android:minHeight="270px"
                 android:editable="true"/>
-        <TextView
+        <EditText
                 android:id="@+id/tv13"
                 android:inputType="numberSigned"
                 android:gravity="center"
@@ -33,7 +33,7 @@
     </TableRow>
 
     <TableRow>
-        <TextView
+        <EditText
                 android:id="@+id/tv21"
                 android:inputType="numberSigned"
                 android:gravity="center"
@@ -41,7 +41,7 @@
                 android:hint="@string/defaultResult"
                 android:minHeight="270px"
                 android:editable="true"/>
-        <TextView
+        <EditText
                 android:id="@+id/tv22"
                 android:inputType="numberSigned"
                 android:gravity="center"
@@ -49,7 +49,7 @@
                 android:hint="@string/defaultResult"
                 android:minHeight="270px"
                 android:editable="true"/>
-        <TextView
+        <EditText
                 android:id="@+id/tv23"
                 android:inputType="numberSigned"
                 android:gravity="center"
@@ -60,7 +60,7 @@
     </TableRow>
 
     <TableRow>
-        <TextView
+        <EditText
                 android:id="@+id/tv31"
                 android:inputType="numberSigned"
                 android:gravity="center"
@@ -68,7 +68,7 @@
                 android:hint="@string/defaultResult"
                 android:minHeight="270px"
                 android:editable="true"/>
-        <TextView
+        <EditText
                 android:id="@+id/tv32"
                 android:inputType="numberSigned"
                 android:gravity="center"
@@ -76,7 +76,7 @@
                 android:hint="@string/defaultResult"
                 android:minHeight="270px"
                 android:editable="true"/>
-        <TextView
+        <EditText
                 android:id="@+id/tv33"
                 android:inputType="numberSigned"
                 android:gravity="center"

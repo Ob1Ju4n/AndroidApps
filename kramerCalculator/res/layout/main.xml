@@ -7,62 +7,101 @@
 
     <TableRow>
         <TextView
-                android:inputType="number"
+                android:id="@+id/tv11"
+                android:inputType="numberSigned"
+                android:gravity="center"
                 android:padding="3dip"
-                android:minHeight="270px"/>
+                android:hint="@string/defaultResult"
+                android:minHeight="270px"
+                android:editable="true"/>
         <TextView
-                android:inputType="number"
+                android:id="@+id/tv12"
+                android:inputType="numberSigned"
+                android:gravity="center"
                 android:padding="3dip"
-                android:minHeight="270px"/>
+                android:hint="@string/defaultResult"
+                android:minHeight="270px"
+                android:editable="true"/>
         <TextView
-                android:inputType="number"
+                android:id="@+id/tv13"
+                android:inputType="numberSigned"
+                android:gravity="center"
                 android:padding="3dip"
-                android:minHeight="270px"/>
+                android:hint="@string/defaultResult"
+                android:minHeight="270px"
+                android:editable="true"/>
     </TableRow>
 
     <TableRow>
         <TextView
-                android:inputType="number"
+                android:id="@+id/tv21"
+                android:inputType="numberSigned"
+                android:gravity="center"
                 android:padding="3dip"
-                android:minHeight="270px"/>
+                android:hint="@string/defaultResult"
+                android:minHeight="270px"
+                android:editable="true"/>
         <TextView
-                android:inputType="number"
+                android:id="@+id/tv22"
+                android:inputType="numberSigned"
+                android:gravity="center"
                 android:padding="3dip"
-                android:minHeight="270px"/>
+                android:hint="@string/defaultResult"
+                android:minHeight="270px"
+                android:editable="true"/>
         <TextView
-                android:inputType="number"
+                android:id="@+id/tv23"
+                android:inputType="numberSigned"
+                android:gravity="center"
                 android:padding="3dip"
-                android:minHeight="270px"/>
+                android:hint="@string/defaultResult"
+                android:minHeight="270px"
+                android:editable="true"/>
     </TableRow>
 
     <TableRow>
         <TextView
-                android:inputType="number"
+                android:id="@+id/tv31"
+                android:inputType="numberSigned"
+                android:gravity="center"
                 android:padding="3dip"
-                android:minHeight="270px"/>
+                android:hint="@string/defaultResult"
+                android:minHeight="270px"
+                android:editable="true"/>
         <TextView
-                android:inputType="number"
+                android:id="@+id/tv32"
+                android:inputType="numberSigned"
+                android:gravity="center"
                 android:padding="3dip"
-                android:minHeight="270px"/>
+                android:hint="@string/defaultResult"
+                android:minHeight="270px"
+                android:editable="true"/>
         <TextView
-                android:inputType="number"
+                android:id="@+id/tv33"
+                android:inputType="numberSigned"
+                android:gravity="center"
                 android:padding="3dip"
-                android:minHeight="270px"/>
+                android:hint="@string/defaultResult"
+                android:minHeight="270px"
+                android:editable="true"/>
     </TableRow>
 
     <TableRow>
         <LinearLayout android:layout_span="3">
-            <TextView
+            <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:text="@string/resultLbl"
-                    android:id="@+id/textView" android:paddingStart="10px"/>
+                    android:id="@+id/resBtn"
+                    android:paddingStart="10px"/>
             <TextView
+                    android:gravity="center"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:id="@+id/textView2" android:hint="@string/defaultResult"
+                    android:id="@+id/resVal"
+                    android:hint="@string/defaultResult"
                     android:paddingStart="10px"/>
         </LinearLayout>
     </TableRow>

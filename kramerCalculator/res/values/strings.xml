@@ -2,5 +2,6 @@
 <resources>
     <string name="app_name">kramerCalculator</string>
     <string name="resultLbl">Resultado:</string>
+    <string name="deleteOpt">Limpiar</string>
     <string name="defaultResult">0</string>
 </resources>

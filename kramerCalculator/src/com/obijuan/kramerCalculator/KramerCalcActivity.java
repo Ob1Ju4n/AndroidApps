@@ -2,6 +2,9 @@ package com.obijuan.kramerCalculator;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -62,19 +65,55 @@ public class KramerCalcActivity extends Activity {
 
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu){
+
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.opts_menu, menu);
+        return true;
+
+    }
+
+    public boolean onOptionsItemSelected(MenuItem item){
+
+        switch (item.getItemId()){
+            case R.id.opts_menu:
+                clearView();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
+    private void clearView(){
+
+        tv11.setText("");
+        tv12.setText("");
+        tv13.setText("");
+
+        tv21.setText("");
+        tv22.setText("");
+        tv23.setText("");
+
+        tv31.setText("");
+        tv32.setText("");
+        tv33.setText("");
+
+    }
+
     private void calcularDeterminante(){
 
-        BigDecimal a11 = new BigDecimal(tv11.getText().toString());
-        BigDecimal a12 = new BigDecimal(tv12.getText().toString());
-        BigDecimal a13 = new BigDecimal(tv13.getText().toString());
+        BigDecimal a11 = tv11.getText().toString().isEmpty() ? BigDecimal.ZERO : new BigDecimal(tv11.getText().toString());
+        BigDecimal a12 = tv12.getText().toString().isEmpty() ? BigDecimal.ZERO : new BigDecimal(tv12.getText().toString());
+        BigDecimal a13 = tv13.getText().toString().isEmpty() ? BigDecimal.ZERO : new BigDecimal(tv13.getText().toString());
 
-        BigDecimal a21 = new BigDecimal(tv21.getText().toString());
-        BigDecimal a22 = new BigDecimal(tv22.getText().toString());
-        BigDecimal a23 = new BigDecimal(tv23.getText().toString());
+        BigDecimal a21 = tv21.getText().toString().isEmpty() ? BigDecimal.ZERO : new BigDecimal(tv21.getText().toString());
+        BigDecimal a22 = tv22.getText().toString().isEmpty() ? BigDecimal.ZERO : new BigDecimal(tv22.getText().toString());
+        BigDecimal a23 = tv23.getText().toString().isEmpty() ? BigDecimal.ZERO : new BigDecimal(tv23.getText().toString());
 
-        BigDecimal a31 = new BigDecimal(tv31.getText().toString());
-        BigDecimal a32 = new BigDecimal(tv32.getText().toString());
-        BigDecimal a33 = new BigDecimal(tv33.getText().toString());
+        BigDecimal a31 = tv31.getText().toString().isEmpty() ? BigDecimal.ZERO : new BigDecimal(tv31.getText().toString());
+        BigDecimal a32 = tv32.getText().toString().isEmpty() ? BigDecimal.ZERO : new BigDecimal(tv32.getText().toString());
+        BigDecimal a33 = tv33.getText().toString().isEmpty() ? BigDecimal.ZERO : new BigDecimal(tv33.getText().toString());
 
         BigDecimal x = (
                 a11.multiply(a22).multiply(a33)
